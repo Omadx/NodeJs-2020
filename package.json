@@ -1,0 +1,44 @@
+{
+  "name": "01-uptasknodejs",
+  "version": "1.0.0",
+  "description": "Proyecto UptaskNode con Node y MVC",
+  "main": "index.js",
+  "scripts": {
+    "desarrollo": "concurrently \"npm run dev \" \"npm run watch \"",
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "watch": "webpack --watch --mode development"
+  },
+  "author": "Omar Elias Peralta Ticona",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bcrypt-nodejs": "0.0.3",
+    "concurrently": "^5.3.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
+    "html-to-text": "^6.0.0",
+    "juice": "^7.0.0",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.4.15",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.0",
+    "sequelize": "^6.3.5",
+    "shortid": "^2.2.16",
+    "slug": "^4.0.0",
+    "sweetalert2": "^10.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "nodemon": "^2.0.6",
+    "webpack": "^5.2.0",
+    "webpack-cli": "^4.1.0"
+  }
+}

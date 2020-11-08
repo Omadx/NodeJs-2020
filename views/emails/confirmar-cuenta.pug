@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style
+            include ./email.css
+    body
+
+        h2 Confirmar Cuenta
+        p Hola, para activar tu cuenta, haz click en el siguiente enlace
+        a(href=`${confirmarUrl}`) Ir a Confirmar Cuenta 
+        p Si no puedes acceder a este, visita #{confirmarUrl}
+        p Si no solicitaste este email puedes ignorarlo 

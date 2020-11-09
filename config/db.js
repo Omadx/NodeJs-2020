@@ -9,7 +9,7 @@ const db = new Sequelize(
   {
     host: process.env.BD_HOST,
     dialect: 'mysql' /*| 'mariadb' | 'postgres' | 'mssql' */,
-    port: process.env.BD_PORT,
+    //port: process.env.BD_PORT,
     define: {
       timestamps: false,
     },

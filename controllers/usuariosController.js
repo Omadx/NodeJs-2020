@@ -3,7 +3,7 @@ const enviarEmail = require('../handlers/email');
 
 exports.formCrearCuenta = (req, res) => {
   //res.send('funciona');
-  res.render('CrearCuenta', {
+  res.render('crearCuenta', {
     nombrePaginas: 'Crear pagina un Uptask',
   });
 };
@@ -11,7 +11,7 @@ exports.formCrearCuenta = (req, res) => {
 exports.formIniciarSesion = (req, res) => {
   //res.send('funciona');
   const { error } = res.locals.mensajes;
-  res.render('IniciarSesion', {
+  res.render('iniciarSesion', {
     nombrePaginas: 'Iniciar sesion pagina un Uptask',
     error,
   });
